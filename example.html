@@ -1,0 +1,11 @@
+	<div class="itemSlider1-wrapper">
+
+		<div class="itemSlider1-slider">
+			{{#each item}}
+				<div class="itemSlider1-tile" data-id="{{_id}}">
+					{{> Template.dynamic template=getCardTemplate}}
+				</div>
+			{{/each}}
+		</div>
+
+	</div>

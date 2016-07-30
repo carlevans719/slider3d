@@ -1,0 +1,80 @@
+
+
+.itemSlider1-wrapper {
+
+	width: 33vw;
+
+	height: 33vw;
+
+	position: relative;
+
+	margin: 0 auto 40px;
+
+	perspective: 1100px;
+
+
+
+	.itemSlider1-slider {
+
+		width: 30vw;
+
+		height: 30vw;
+
+		position: absolute;
+
+		transform-style: preserve-3d;
+
+
+
+		.itemSlider1-tile {
+
+			backface-visibility: hidden;
+
+			display: block;
+
+			position: absolute;
+
+			width: 90%;
+
+			height: 90%;
+
+			left: 0;
+
+			top: 0;
+
+			// line-height: 116px;
+
+			font-size: 80px;
+
+			font-weight: bold;
+
+			color: white;
+
+			text-align: center;
+
+		}
+
+	}
+
+
+
+	&.itemSlider1-ready  {
+
+		.itemSlider1-slider {
+
+			transition: transform 1s;
+
+
+
+			.itemSlider1-tile {
+
+				transition: opacity 1s, transform 1s;
+
+			}
+
+		}
+
+	}
+
+}
+
