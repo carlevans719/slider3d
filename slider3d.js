@@ -65,7 +65,7 @@ window.Slider3D = class Slider3D {
 	}
 
 	onMouseMove(e) {
-		console.log("e.pageX");
+		console.log(e.pageX);
 	  if (this.isMouseDown) {
 	    this.rotation -= (this.mouseXPos - e.pageX);
 			this.mouseXPos = e.pageX;
