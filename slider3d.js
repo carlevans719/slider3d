@@ -1,5 +1,4 @@
-'use strict'
-window.hello = 'test';
+;'use strict'
 
 window.Slider3D = class Slider3D {
 
